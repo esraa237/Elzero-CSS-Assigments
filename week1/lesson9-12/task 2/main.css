@@ -1,0 +1,18 @@
+div{
+    width: 400px;
+    margin:60px 30px ;
+    outline: rgb(235, 235, 235) solid 20px;
+    padding:15px 100% 20px 20px;
+    font-size: 30px;
+    background-color: rgb(235, 235, 235);
+}
+.one{
+    border-left:rgb(243, 97, 165) solid 10px;
+}
+.two{
+    border-left:rgb(83, 212, 141) solid 10px;
+    visibility: hidden;
+}
+.three{
+    border-left:rgb(57, 163, 196) solid 10px;
+}

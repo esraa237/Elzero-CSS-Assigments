@@ -1,0 +1,12 @@
+p{
+max-width: 400px;
+width:fit-content;
+background-color: brown;
+color:white;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+max-height :38px ;
+padding: 1rem;
+}
+.fourth-p{
+    overflow-y: hidden;
+}

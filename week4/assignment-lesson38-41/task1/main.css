@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+.div1{
+    counter-increment: count;
+    width: 100px;
+    height: 100px;
+    padding:40px 0px;
+    margin:15px;
+    float:left;
+    text-align: center;
+    font-family:sans-serif;
+    position: relative;
+    border:2px solid black;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow:5px 5px #2196f3,
+               -5px -5px #e91e63;
+}
+
+.div1::before{
+    content: counter(count);
+    color:white;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom:87px;
+    left:37px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

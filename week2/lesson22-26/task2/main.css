@@ -1,0 +1,24 @@
+div {
+    font-size: 25px;
+    margin: 30px;
+    text-align: center;
+}
+
+.one {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    margin: inherit;
+}
+
+.two {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    margin: inherit;
+}
+
+.three {
+    font-family: 'Jomhuria', cursive;
+    font-weight: 400;
+    margin: inherit;
+}

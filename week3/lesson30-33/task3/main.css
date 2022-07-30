@@ -1,0 +1,36 @@
+ul{
+    width: 400px;
+    list-style-position: inside;
+    font-family:sans-serif;
+}
+.one-li,
+.two-li,
+.three-li{
+    background-color: #eee;
+    padding: 5px;
+    margin:15px;
+    list-style-type: none;
+}
+
+.one-ol li,
+.two-ol li,
+.three-ol li{
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    padding: 7px;
+
+}
+
+.one-ol li{
+    list-style-position: outside;
+}
+
+.two-ol li{
+    list-style-type:upper-roman;
+    list-style-position: outside;
+}
+
+.three-ol li{
+    list-style-type: circle;
+}
+

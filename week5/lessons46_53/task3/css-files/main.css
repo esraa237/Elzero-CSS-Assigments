@@ -20,7 +20,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .parent div{
@@ -30,28 +30,27 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
 .one{
     height:calc(100%/8);
     order: 6;
+    align-self: flex-end;
 }
 .two{
     height:150px;
-    order: 4;
+    order: 5;
 }
 .three{
     height:calc(100%/8);
-    order:3;
+    order:2;
 }
 .four{
     height:150px;
-    order:5;
+    order:3;
 }
 .five{
     height:150px;
-    order:2;
+    order:4;
 }
 .six{
     height:150px;

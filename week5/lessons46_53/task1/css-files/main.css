@@ -1,0 +1,27 @@
+:root{
+    --maincolor:#ff5722;
+    --secondcolor:#03a9f4;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.Div{
+    width:100px;
+    height: 100px;
+    background-color: #eee;
+    color: var(--maincolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow:3px 0px var(--maincolor),-3px 0px var(--secondcolor) ;
+}

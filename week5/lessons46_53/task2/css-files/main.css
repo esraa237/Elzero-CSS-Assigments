@@ -1,0 +1,30 @@
+:root{
+    --maincolor:#f44336;
+    --secondcolor:#eeeeee;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.parent{
+    width:600px;
+    height:300px;
+    padding: 10px;
+    background-color: var(--secondcolor);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.parent div{
+    width:calc(94% /3);
+    height: 40px;
+    background-color: var(--maincolor);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

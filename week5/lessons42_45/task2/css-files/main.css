@@ -1,0 +1,15 @@
+.one{
+    width: 400px;
+    background-color: #eee !important;
+    font-size: 0px !important;
+    border: none !important;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+.one::after{
+    content: "Elzero";
+    font-size: 20px;
+    color: black;
+}

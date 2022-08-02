@@ -1,0 +1,59 @@
+:root{
+    --maincolor:#607d8b;
+    --secondcolor:#eeeeee;
+    font-family:sans-serif ;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.parent{
+    width: 600px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--secondcolor);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column;
+}
+
+.parent div{
+    width:calc(95%/3);
+    background-color: var(--maincolor);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.one{
+    height:calc(100%/8);
+    order: 6;
+}
+.two{
+    height:150px;
+    order: 4;
+}
+.three{
+    height:calc(100%/8);
+    order:3;
+}
+.four{
+    height:150px;
+    order:5;
+}
+.five{
+    height:150px;
+    order:2;
+}
+.six{
+    height:150px;
+    order:1;
+}

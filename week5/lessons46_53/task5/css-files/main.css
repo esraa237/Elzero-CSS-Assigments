@@ -1,0 +1,52 @@
+:root{
+    --maincolor:#eeeeee;
+    --color1:#ff9800;
+    --color2:#8bc34a;
+    --color3:#795548;
+    --color4:#673ab7;
+    color:white;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.parent{
+    width: 600px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+    background-color: var(--maincolor);
+    display: flex;
+    justify-content: space-between;
+
+}
+.parent div{
+    width:calc(70%/4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    background-color: var(--color1);
+    height:150px;
+    order:2;
+}
+.two{
+    background-color: var(--color2);
+    height: 150px;
+    order:3;
+    align-self: flex-end;
+}
+.three{
+    background-color: var(--color3);
+    height:150px;
+    order:4;
+}
+.four{
+    background-color: var(--color4);
+    height: 150px;
+    order:1;
+    align-self: flex-end;
+}

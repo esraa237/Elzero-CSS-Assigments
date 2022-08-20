@@ -1,0 +1,72 @@
+:root{
+    --maincolor:#eeeeee;
+    --secondcolor:#ddd;
+    color:black;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+.page{
+   width:600px;
+   height: 300px;
+   padding: 10px;
+   background-color: var(--maincolor);
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.page div{
+    padding: 5px;
+    display: flex;
+}
+
+.header{
+    width:calc(98%);
+    height: 30px;
+    justify-content: space-between;
+    
+}
+.logo{
+    width:calc(7%);
+    background-color: var(--secondcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links{
+    width:calc(88%);
+    background-color: var(--secondcolor);
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.links li{
+    padding-left: 5px;
+}
+
+
+.main-area{
+    width:calc(98%);
+    height: calc(70%);
+}
+.content{
+    margin-right: 10px;
+    width: calc(65%);
+    background-color: var(--secondcolor);
+}
+.sidebar{
+    width: calc(30%);
+    background-color: var(--secondcolor);
+}
+
+
+
+.footer{
+    background-color: var(--secondcolor);
+    width:calc(97%);
+    margin-left: 3px;   
+    justify-content: space-between;
+}
+
+

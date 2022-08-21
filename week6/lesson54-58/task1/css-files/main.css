@@ -1,0 +1,72 @@
+:root{
+    --main_color:#eeeeee;
+    --color1:#673ab7;
+    --color2:#e91e63;
+    --color3:#4caf50;
+    --color4:#2196f3;
+    --color5:#f44336; 
+    box-sizing:border-box ;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.div1{
+    width: 600px;
+    height: 100px;
+    background-color:var(--main_color);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 10px;
+    font-weight:550;
+    border-right: var(--color1) 10px solid;
+    border-left: var(--color5) 10px solid;
+    position: relative;
+}
+
+.div1::first-letter{
+    
+}
+p::first-letter{
+    color:var(--color5);
+}
+
+.div1::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    width:620px;
+    height: 10px;
+    background-image: linear-gradient(to right
+    ,var(--color5)20%
+    ,var(--color4)20%
+    ,var(--color4)40%
+    ,var(--color3)40%
+    ,var(--color3)60%
+    ,var(--color2)60%
+    ,var(--color2)80%
+    ,var(--color1)80%);
+}
+
+.div1::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: -10px;
+    width:620px;
+    height: 10px;
+    background-image: linear-gradient(to right
+    ,var(--color5)20%
+    ,var(--color4)20%
+    ,var(--color4)40%
+    ,var(--color3)40%
+    ,var(--color3)60%
+    ,var(--color2)60%
+    ,var(--color2)80%
+    ,var(--color1)80%);
+}

@@ -1,0 +1,31 @@
+:root{
+    --color1:#403f3f;
+    --color2:#dddddd;
+    --font-color:#ffffff;
+    color: var(--font-color);
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+body{
+    display: grid;
+    justify-content: center;
+}
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: 1fr auto;
+    gap: 20px 20px;
+  }
+
+  .grid div{
+    background-color: var(--color1);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+  }

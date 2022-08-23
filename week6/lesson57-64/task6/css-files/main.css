@@ -1,0 +1,115 @@
+:root{
+    --main-color1:#000000;
+    --main-color2:#fff;
+    --color1:#eee;
+    --color2:#ff4910;
+    --color3:#b3b3b3;
+}
+
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.page{
+    background-color: var(--color1);
+    display: grid;
+    justify-content: center;
+    padding: 40px 40px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto repeat(2,1fr) auto;
+    gap: 25px 20px;
+}
+.page div{
+    padding:30px 35px;
+}
+
+h3{
+    margin-bottom: 10px;
+}
+h4{
+    color: var(--color3);
+    margin:0;
+}
+.p1{
+    margin: 20px 0px;
+    font-weight: 750;
+    font-size: 18px;
+}
+
+
+.osama{
+    background-color: var(--main-color2);
+    grid-area: 1/1/2/3;
+    position: relative;
+}
+.ahmed{
+    background-color: var(--main-color2);
+    grid-area: 1/3/2/4;
+    position: relative;
+}
+.shady{
+    background-color: var(--main-color1);
+    color: var(--color1);
+    grid-area: 1/4/4/5;
+    position: relative;
+}
+.mohamed1{
+    background-color: var(--main-color2);
+    grid-area: 2/1/4/2;
+    position: relative;
+}
+.mahmoud{
+    grid-area: 2/2/3/4;
+    background-color: var(--main-color1);
+    color: var(--color1);
+    position: relative;
+}
+.ezz{
+    background-color: var(--main-color2);
+    grid-area: 3/2/4/4;
+    position: relative;
+}
+.mohamed2,.ibrahim,.eman{
+    background-color: var(--main-color2);
+    position: relative;
+}
+.gamal{
+    background-color: var(--main-color1);
+    color: var(--color1);
+    position: relative;
+}
+
+.osama::after,.ahmed::after
+,.mohamed1::after,.mahmoud::after
+,.mohamed2::after,.ezz::after
+,.ibrahim::after,.eman::after
+,.gamal::after,.shady::after{
+    content:"";
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    background-color: var(--color2);
+    height: 4px;
+    width: calc(100%);
+}
+
+.osama::before,.ahmed::before
+,.mohamed1::before,.mahmoud::before
+,.mohamed2::before,.ezz::before
+,.ibrahim::before,.eman::before
+,.gamal::before,.shady::before{
+    content: "\0022";
+    position: absolute;
+    right:15px;
+    bottom:-40px;
+    color: var(--color3);
+    font-size: 80px;
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+}
+

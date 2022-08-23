@@ -1,0 +1,79 @@
+:root{
+    --main-color:#ddd;
+    --color1:#607d8b;
+    --font-color:#ffffff;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+}
+
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    gap: 20px 20px;
+    grid-template-rows:50px 1fr;
+    
+  }
+
+  .grid div{
+    background-color: var(--color1);
+    position: relative;
+  }
+
+  .element1::before{
+    content: "Element 1";
+    color: var(--font-color);
+    position: absolute;
+    top:10px;
+    left:70px;
+   }
+
+   .element2::before{
+    content: "Element 2";
+    color: var(--font-color);
+    position: absolute;
+    top:10px;
+    left:70px;
+   }
+
+   .element3::before{
+    content: "Element 3";
+    color: var(--font-color);
+    position: absolute;
+    top:10px;
+    left:70px;
+   }
+
+   .element4::before{
+    content: "Element 4";
+    color: var(--font-color);
+    position: absolute;
+    top:140px;
+    left:70px;
+   }
+
+   .element5::before{
+        content: "Element 5";
+        color: var(--font-color);
+        position: absolute;
+        top:140px;
+        left:70px;
+   }
+
+   .element6::before{
+    content: "Element 6";
+    color: var(--font-color);
+    position: absolute;
+    top:140px;
+    left:70px;
+    }

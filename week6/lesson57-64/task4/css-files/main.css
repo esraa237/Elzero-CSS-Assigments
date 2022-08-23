@@ -1,0 +1,70 @@
+:root{
+    --main-color:#dddddd;
+    --color1:#2196f3;
+    --font-color:#fff;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--font-color);
+}
+
+body{
+    display: grid;
+    justify-content: center;
+}
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    background-color: var(--main-color);
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 20px 20px;
+    
+  }
+
+  .grid div{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--color1);
+  }
+
+  .one{
+    grid-area:6/1/auto/4;
+  }
+
+  .two{
+    grid-area: 2/1/auto/3;
+  }
+
+  .three{
+    grid-area: 2/3/auto/auto;
+  }
+
+  .four{
+    grid-area: 3/1/auto/2;
+  }
+
+  .five{
+    grid-area: 3/2/6/4;
+  }
+
+  .six{
+    grid-area:4/1/5/2;
+  }
+ 
+  .seven{
+    grid-area: 5/1/6/2;
+  }
+
+  .eight{
+    grid-area: 1/1/2/4;
+  }

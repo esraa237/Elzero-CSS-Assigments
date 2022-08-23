@@ -1,0 +1,36 @@
+:root{
+    --main-color:#dddddd;
+    --color1:#e91e63;
+    --font-color:#fff;
+    
+}
+
+ *{
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold; 
+  }
+  body{
+    display: grid;
+    justify-content: center;
+  }
+
+  .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    column-gap:20px;
+    align-content: space-between;
+  }
+
+  .grid div{
+    display: grid;
+    justify-content: center;
+    background-color: var(--color1);
+    color: var(--font-color);
+  }

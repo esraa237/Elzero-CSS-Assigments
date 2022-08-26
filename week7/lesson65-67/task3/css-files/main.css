@@ -1,0 +1,89 @@
+:root{
+    --main-color:#eeeeee;
+    --color1:#03a9f4;
+    --color2:#e91e63;
+    font-family:'Times New Roman', Times, serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body{
+    height: 500px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.div1{
+    width: 200px;
+    height: 200px;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+}
+
+.div1::after{
+    content:"";
+    width: 200px;
+    height: 200px;
+    border: #e91e63 10px solid;
+    border-left-color:transparent;
+    position: absolute;
+    left: -10px;
+    top:-10px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.div1::before{
+   content:"";
+   width: 220px;
+   height: 220px;
+   border: var(--color1) 10px solid;
+   border-right-color:transparent;
+   position: absolute;
+   top:-20px;
+   left: -20px;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   transition: .5s;
+   -webkit-transition: .5s;
+   -moz-transition: .5s;
+   -ms-transition: .5s;
+   -o-transition: .5s;
+}
+.div1:hover::after,.div1:hover{
+    transform:rotate(360deg) ;
+    -webkit-transform:rotate(360deg) ;
+    -moz-transform:rotate(360deg) ;
+    -ms-transform:rotate(360deg) ;
+    -o-transform:rotate(360deg) ;
+}
+.div1:hover::before,.div1:hover{
+    transform:rotate(-360deg) ;
+    -webkit-transform:rotate(-360deg) ;
+    -moz-transform:rotate(-360deg) ;
+    -ms-transform:rotate(-360deg) ;
+    -o-transform:rotate(-360deg) ;
+}

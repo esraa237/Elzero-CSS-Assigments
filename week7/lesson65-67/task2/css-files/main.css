@@ -1,0 +1,71 @@
+:root{
+    --main-color:#eeeeee;
+    --color1:#03a9f4;
+    --color2:#e91e63;
+    font-family:'Times New Roman', Times, serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body{
+    height: 500px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.div1{
+    width: 200px;
+    height: 200px;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+}
+
+.div1::after{
+    content:"";
+    width: 200px;
+    height: 200px;
+    border: #e91e63 10px solid;
+    border-left-color:transparent;
+    position: absolute;
+    transform: translate(-10px,-10px);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-10px,-10px);
+    -moz-transform: translate(-10px,-10px);
+    -ms-transform: translate(-10px,-10px);
+    -o-transform: translate(-10px,-10px);
+}
+
+.div1::before{
+    content:"";
+    width: 200px;
+    height: 200px;
+    border: var(--color1) 10px solid;
+    border-right-color:transparent;
+    position: absolute;
+    transform: translate(-10px,-10px) scale(1.11,1.11);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-10px,-10px) scale(1.11,1.11);
+    -moz-transform: translate(-10px,-10px) scale(1.11,1.11);
+    -ms-transform: translate(-10px,-10px) scale(1.11,1.11);
+    -o-transform: translate(-10px,-10px) scale(1.11,1.11);
+}

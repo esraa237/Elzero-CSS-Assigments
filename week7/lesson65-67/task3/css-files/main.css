@@ -67,11 +67,11 @@ body{
    -moz-border-radius: 50%;
    -ms-border-radius: 50%;
    -o-border-radius: 50%;
-   transition: .5s;
-   -webkit-transition: .5s;
-   -moz-transition: .5s;
-   -ms-transition: .5s;
-   -o-transition: .5s;
+   transition: .5s .5s;
+   -webkit-transition: .5s .5s;
+   -moz-transition: .5s .5s;
+   -ms-transition: .5s .5s;
+   -o-transition: .5s .5s;
 }
 .div1:hover::after,.div1:hover{
     transform:rotate(360deg) ;

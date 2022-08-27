@@ -1,0 +1,13 @@
+.class {
+    transform:matrix(3, 0.2679, 0, 3, 20, 100);
+    -webkit-transform:matrix(3, 0.2679, 0, 3, 20, 100);
+    -moz-transform:matrix(3, 0.2679, 0, 3, 20, 100);
+    -ms-transform:matrix(3, 0.2679, 0, 3, 20, 100);
+    -o-transform:matrix(3, 0.2679, 0, 3, 20, 100);
+}
+
+/*    
+    transform: translateX(20px) translateY(100px) scaleX(3) skewX(15deg) skewY(0) scaleY(3) ;
+OR
+    transform: translate(20px,100px) scale(3) skew(15deg,0);
+*/

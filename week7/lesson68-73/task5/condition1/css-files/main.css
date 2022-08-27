@@ -1,0 +1,72 @@
+:root{
+    --color1:#1692fc;
+    --color2:#fa3664;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: sans-serif;
+}
+
+.content{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition:1s ;
+    -webkit-transition:1s ;
+    -moz-transition:1s ;
+    -ms-transition:1s ;
+    -o-transition:1s ;
+}
+
+.content:hover{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.content::after{
+    content: "Back";
+    color: white;
+    font-size: 40px;
+    background-color: var(--color1);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    right:0;
+    bottom:0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility:hidden;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+.content::before{
+    content: "Front";
+    color: white;
+    font-size: 40px;
+    background-color: var(--color2);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    left:0;
+    top:0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility:hidden;
+}
+

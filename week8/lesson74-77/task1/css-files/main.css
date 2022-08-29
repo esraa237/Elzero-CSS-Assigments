@@ -30,7 +30,7 @@
     -o-border-radius: 50%;
     position:relative;
     animation-name: turn;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function:linear;
 }
@@ -50,7 +50,7 @@
     -ms-border-radius:50%;
     -o-border-radius:50%;
     animation-name: turn;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function:linear;
 }
@@ -70,7 +70,7 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     animation-name: turn;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function:linear;
 }

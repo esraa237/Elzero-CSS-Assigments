@@ -1,0 +1,9 @@
+*{
+    font-size: 30px;
+    margin: 0;
+    font-weight: 400;
+}
+div>:not(h3,:nth-child(1),:nth-last-child(1)){
+    color:red;
+    font-weight: bold;
+}

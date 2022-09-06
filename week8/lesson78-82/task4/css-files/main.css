@@ -1,0 +1,8 @@
+*{
+    font-size: 30px;
+    
+}
+div[title]:not(.parent>div):not(.no-need){
+    color:red;
+    font-weight: bold;
+}

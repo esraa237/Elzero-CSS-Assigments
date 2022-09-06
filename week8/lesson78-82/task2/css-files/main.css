@@ -1,3 +1,6 @@
+*{
+    font-size: 50px;
+}
 .parent>:nth-child(2){
     color:red;
 }

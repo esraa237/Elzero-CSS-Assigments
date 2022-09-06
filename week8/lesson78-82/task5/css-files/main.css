@@ -1,0 +1,7 @@
+*{
+    font-size: 30px;
+    margin: 0;
+}
+div:nth-of-type(2)>div{
+    color:red;
+}
